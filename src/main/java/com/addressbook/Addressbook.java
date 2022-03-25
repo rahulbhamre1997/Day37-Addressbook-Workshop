@@ -1,9 +1,17 @@
 package com.addressbook;
 
-public class Addressbook {
+import java.util.ArrayList;
+import java.util.List;
 
-	public static void main(String[] args) {
-		System.out.println("Welcome to Addressbook Workshop");
+
+public class AddressBook {
+	List<Contact> contactList = new ArrayList<Contact>();
+
+	public void addContact(Contact contacts) {
+		contactList.add(contacts);
 	}
 
+	public List<Contact> getcontactList() {
+		return contactList;
+	}
 }
